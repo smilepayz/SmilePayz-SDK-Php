@@ -18,7 +18,7 @@ class InquiryOrderStatusDemo
 
         //get time
         $currentTime = new DateTime('now', new DateTimeZone('UTC'));
-        $currentTime->setTimezone(new DateTimeZone('Asia/Bangkok'));
+        $currentTime->setTimezone(new DateTimeZone('Asia/Sao_Paulo'));
         $timestamp = $currentTime->format('Y-m-d\TH:i:sP');
 
         echo "timestamp=" . $timestamp . PHP_EOL;

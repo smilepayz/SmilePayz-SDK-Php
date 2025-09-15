@@ -24,7 +24,7 @@ class PayInRequestDemo
 
         //get time
         $currentTime = new DateTime('now', new DateTimeZone('UTC'));
-        $currentTime->setTimezone(new DateTimeZone('Asia/Bangkok'));
+        $currentTime->setTimezone(new DateTimeZone('Asia/Kolkata'));
         $timestamp = $currentTime->format('Y-m-d\TH:i:sP');
         $signUtils = new Signature();
 
