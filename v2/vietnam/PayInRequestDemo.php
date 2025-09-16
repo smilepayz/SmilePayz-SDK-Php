@@ -8,7 +8,7 @@ class PayInRequestDemo
      * @throws Exception
      */
     public function doTransaction($env, $merchant_id, $merchant_secret,
-                                  $private_key, $payment_method, $name, $account_no, $payer_bank_name,
+                                  $private_key, $payment_method,
                                   $amount)
     {
 
@@ -46,13 +46,6 @@ class PayInRequestDemo
             'merchantName' => ''
         );
 
-        //$payer_req
-        $payer_req = array(
-            'name' => $name,
-            'accountNo' => $account_no,
-            'bankName' => $payer_bank_name
-        );
-
 
         //$payinReq
         $payinReq = array(
@@ -60,7 +53,6 @@ class PayInRequestDemo
             'purpose' => $purpose,
             'money' => $moneyReq,
             'merchant' => $merchantReq,
-            'payer' => $payer_req,
             'paymentMethod' => $payment_method,
         );
 
